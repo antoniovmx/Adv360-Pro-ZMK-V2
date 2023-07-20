@@ -32,5 +32,39 @@
 		},
 		"footnotes": {},
 		"type": "UD"
+	},
+	{
+		"names": [
+			"LC(ENTER)"
+		],
+		"description": "LC(ENTER)",
+		"clarify": false,
+		"documentation": "",
+		"os": {
+			"windows": true,
+			"linux": true,
+			"android": true,
+			"macos": true,
+			"ios": true
+		},
+		"footnotes": {},
+		"type": "UD"
+	},
+	{
+		"names": [
+			"RC(ENTER)"
+		],
+		"description": "RC(ENTER)",
+		"clarify": false,
+		"documentation": "",
+		"os": {
+			"windows": true,
+			"linux": true,
+			"android": true,
+			"macos": true,
+			"ios": true
+		},
+		"footnotes": {},
+		"type": "UD"
 	}
 ]
