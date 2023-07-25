@@ -37,11 +37,11 @@
 
         default_layer {
             bindings = <
-   &kp EQUAL        &kp EXCL          &kp AT         &kp HASH      &kp DLLR  &kp PRCNT     &mo 3                                                          &kp PG_UP      &hm KP_LPAR LANGUAGE_9      &hm LPAR INTERNATIONAL_9      &hm KP_LEFT_PARENTHESIS KP_NUMBER_9      &hm LEFT_PARENTHESIS KP_N9      &hm A B  &hm LESS_THAN GREATER_THAN
-&kp CAPSLOCK           &kp Q           &kp W            &kp E         &kp R      &kp T  &kp HOME                                                          &kp PG_DN  &hm KP_LPAR LS(LANGUAGE_9)  &hm LPAR LS(INTERNATIONAL_9)  &hm KP_LEFT_PARENTHESIS LS(KP_NUMBER_9)  &hm LEFT_PARENTHESIS LS(KP_N9)  &hm A LS(B)                   &hm LT GT
-     &kp TAB           &kp A           &kp S            &kp D         &kp F      &kp G   &kp END  &kp LCTRL       &kp LALT           &kp RALT  &kp RCTRL     &tog 1                       &kp H                         &kp J                                    &kp K                           &kp L     &kp SEMI                     &kp SQT
-   &kp LSHFT           &kp Z           &kp X            &kp C         &kp V      &kp B                             &kp ESC           &kp LGUI                                             &kp N                         &kp M                                &kp COMMA                         &kp DOT     &kp FSLH                   &kp RSHFT
-       &mo 2  &kp DOWN_ARROW  &kp LEFT_ARROW  &kp RIGHT_ARROW  &kp UP_ARROW             &kp BSPC  &kp ENTER  &kp LS(ENTER)      &kp RS(ENTER)  &kp ENTER  &kp SPACE                                                 &kp EQUAL                                 &kp LBKT                        &kp RBKT    &kp GRAVE                       &mo 2
+   &kp EQUAL        &kp EXCL          &kp AT         &kp HASH      &kp DLLR  &kp PRCNT     &mo 3                                                          &kp PG_UP  &kp CARET   &kp AMPS  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp BACKSLASH
+&kp CAPSLOCK           &kp Q           &kp W            &kp E         &kp R      &kp T  &kp HOME                                                          &kp PG_DN      &kp Y      &kp U         &kp I                 &kp O                  &kp P      &kp MINUS
+     &kp TAB           &kp A           &kp S            &kp D         &kp F      &kp G   &kp END  &kp LCTRL       &kp LALT           &kp RALT  &kp RCTRL     &tog 1      &kp H      &kp J         &kp K                 &kp L               &kp SEMI        &kp SQT
+   &kp LSHFT           &kp Z           &kp X            &kp C         &kp V      &kp B                             &kp ESC           &kp LGUI                            &kp N      &kp M     &kp COMMA               &kp DOT               &kp FSLH      &kp RSHFT
+       &mo 2  &kp DOWN_ARROW  &kp LEFT_ARROW  &kp RIGHT_ARROW  &kp UP_ARROW             &kp BSPC  &kp ENTER  &kp LS(ENTER)      &kp RS(ENTER)  &kp ENTER  &kp SPACE             &kp EQUAL      &kp LBKT              &kp RBKT              &kp GRAVE          &mo 2
             >;
         };
 
