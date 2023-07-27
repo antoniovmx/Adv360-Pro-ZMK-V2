@@ -30,12 +30,112 @@
                 <&kp>,
                 <&kp>;
         };
-        paren_nine: paren_nine {
+        par_nine: par_nine {
             compatible = "zmk,behavior-mod-morph";
-            label = "PAREN_NINE";
+            label = "PAR_NINE";
             bindings =
                 <&kp LEFT_PARENTHESIS>,
                 <&kp N9>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+        ex_one: ex_one {
+            compatible = "zmk,behavior-mod-morph";
+            label = "EX_ONE";
+            bindings =
+                <&kp EXCLAMATION>,
+                <&kp KP_NUMBER_1>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+        at_two: at_two {
+            compatible = "zmk,behavior-mod-morph";
+            label = "AT_TWO";
+            bindings =
+                <&kp AT_SIGN>,
+                <&kp KP_NUMBER_2>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+        octo_three: octo_three {
+            compatible = "zmk,behavior-mod-morph";
+            label = "OCTO_THREE";
+            bindings =
+                <&kp HASH>,
+                <&kp KP_NUMBER_3>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+        perc_five: perc_five {
+            compatible = "zmk,behavior-mod-morph";
+            label = "PERC_FIVE";
+            bindings =
+                <&kp PRCNT>,
+                <&kp KP_NUMBER_5>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+        car_six: car_six {
+            compatible = "zmk,behavior-mod-morph";
+            label = "CAR_SIX";
+            bindings =
+                <&kp CARET>,
+                <&kp KP_NUMBER_6>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+        amp_seven: amp_seven {
+            compatible = "zmk,behavior-mod-morph";
+            label = "AMP_SEVEN";
+            bindings =
+                <&kp AMPS>,
+                <&kp KP_NUMBER_7>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+        ast_eight: ast_eight {
+            compatible = "zmk,behavior-mod-morph";
+            label = "AST_EIGHT";
+            bindings =
+                <&kp ASTERISK>,
+                <&kp KP_NUMBER_8>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+        par_zero: par_zero {
+            compatible = "zmk,behavior-mod-morph";
+            label = "PAR_ZERO";
+            bindings =
+                <&kp RPAR>,
+                <&kp KP_NUMBER_0>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+        dol_four: dol_four {
+            compatible = "zmk,behavior-mod-morph";
+            label = "DOL_FOUR";
+            bindings =
+                <&kp DLLR>,
+                <&kp KP_NUMBER_4>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+        under_minus: under_minus {
+            compatible = "zmk,behavior-mod-morph";
+            label = "UNDER_MINUS";
+            bindings =
+                <&kp UNDERSCORE>,
+                <&kp MINUS>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
@@ -47,11 +147,11 @@
 
         default_layer {
             bindings = <
-   &kp EQUAL        &kp EXCL          &kp AT         &kp HASH      &kp DLLR  &kp PRCNT     &mo 3                                                          &kp PG_UP  &kp CARET   &kp AMPS  &kp ASTERISK  &paren_nine  &kp RIGHT_PARENTHESIS  &kp BACKSLASH
-&kp CAPSLOCK           &kp Q           &kp W            &kp E         &kp R      &kp T  &kp HOME                                                          &kp PG_DN      &kp Y      &kp U         &kp I        &kp O                  &kp P      &kp MINUS
-     &kp TAB           &kp A           &kp S            &kp D         &kp F      &kp G   &kp END  &kp LCTRL       &kp LALT           &kp RALT  &kp RCTRL     &tog 1      &kp H      &kp J         &kp K        &kp L               &kp SEMI        &kp SQT
-   &kp LSHFT           &kp Z           &kp X            &kp C         &kp V      &kp B                             &kp ESC           &kp LGUI                            &kp N      &kp M     &kp COMMA      &kp DOT               &kp FSLH      &kp RSHFT
-       &mo 2  &kp DOWN_ARROW  &kp LEFT_ARROW  &kp RIGHT_ARROW  &kp UP_ARROW             &kp BSPC  &kp ENTER  &kp LS(ENTER)      &kp RS(ENTER)  &kp ENTER  &kp SPACE             &kp EQUAL      &kp LBKT     &kp RBKT              &kp GRAVE          &mo 2
+   &kp EQUAL         &ex_one         &at_two      &octo_three     &dol_four  &perc_five     &mo 3                                                          &kp PG_UP  &car_six  &amp_seven  &ast_eight  &par_nine  &par_zero  &kp BACKSLASH
+&kp CAPSLOCK           &kp Q           &kp W            &kp E         &kp R       &kp T  &kp HOME                                                          &kp PG_DN     &kp Y       &kp U       &kp I      &kp O      &kp P   &under_minus
+     &kp TAB           &kp A           &kp S            &kp D         &kp F       &kp G   &kp END  &kp LCTRL       &kp LALT           &kp RALT  &kp RCTRL     &tog 1     &kp H       &kp J       &kp K      &kp L   &kp SEMI        &kp SQT
+   &kp LSHFT           &kp Z           &kp X            &kp C         &kp V       &kp B                             &kp ESC           &kp LGUI                           &kp N       &kp M   &kp COMMA    &kp DOT   &kp FSLH      &kp RSHFT
+       &mo 2  &kp DOWN_ARROW  &kp LEFT_ARROW  &kp RIGHT_ARROW  &kp UP_ARROW              &kp BSPC  &kp ENTER  &kp LS(ENTER)      &kp RS(ENTER)  &kp ENTER  &kp SPACE             &kp EQUAL    &kp LBKT   &kp RBKT  &kp GRAVE          &mo 2
             >;
         };
 
