@@ -140,22 +140,22 @@
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
-        space_backspace: space_backspace {
+        backspace_delete: backspace_delete {
             compatible = "zmk,behavior-mod-morph";
-            label = "SPACE_BACKSPACE";
+            label = "BACKSPACE_DELETE";
             bindings =
-                <&kp SPACE>,
-                <&kp BACKSPACE>;
+                <&kp BACKSPACE>,
+                <&kp LS(DELETE)>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
-        enter_delete: enter_delete {
+        enter_backspace: enter_backspace {
             compatible = "zmk,behavior-mod-morph";
-            label = "ENTER_DELETE";
+            label = "ENTER_BACKSPACE";
             bindings =
                 <&kp KP_ENTER>,
-                <&kp DELETE>;
+                <&kp LS(BACKSPACE)>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
