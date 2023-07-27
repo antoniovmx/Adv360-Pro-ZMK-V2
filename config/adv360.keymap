@@ -145,7 +145,7 @@
             label = "BACKSPACE_DELETE";
             bindings =
                 <&kp BACKSPACE>,
-                <&kp LS(DELETE)>;
+                <&kp DELETE>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
@@ -155,7 +155,7 @@
             label = "ENTER_BACKSPACE";
             bindings =
                 <&kp KP_ENTER>,
-                <&kp LS(BACKSPACE)>;
+                <&kp BACKSPACE>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
