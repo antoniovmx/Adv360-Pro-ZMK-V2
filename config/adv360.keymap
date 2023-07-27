@@ -150,12 +150,12 @@
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
-        enter_backspace: enter_backspace {
+        enter_space: enter_space {
             compatible = "zmk,behavior-mod-morph";
-            label = "ENTER_BACKSPACE";
+            label = "ENTER_SPACE";
             bindings =
                 <&kp KP_ENTER>,
-                <&kp BACKSPACE>;
+                <&kp SPACE>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
