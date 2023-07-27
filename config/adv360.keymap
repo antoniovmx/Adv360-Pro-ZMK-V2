@@ -140,6 +140,36 @@
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
+        space_backspace: space_backspace {
+            compatible = "zmk,behavior-mod-morph";
+            label = "SPACE_BACKSPACE";
+            bindings =
+                <&kp SPACE>,
+                <&kp BACKSPACE>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+        enter_delete: enter_delete {
+            compatible = "zmk,behavior-mod-morph";
+            label = "ENTER_DELETE";
+            bindings =
+                <&kp KP_ENTER>,
+                <&kp DELETE>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+        sEnter_cEnter: sEnter_cEnter {
+            compatible = "zmk,behavior-mod-morph";
+            label = "SENTER_CENTER";
+            bindings =
+                <&kp LS(KP_ENTER)>,
+                <&kp LC(KP_ENTER)>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
     };
 
     keymap {
