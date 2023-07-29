@@ -170,6 +170,16 @@
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
+        new_backspace_delete: new_backspace_delete {
+            compatible = "zmk,behavior-mod-morph";
+            label = "NEW_BACKSPACE_DELETE";
+            bindings =
+                <&hm LC(BACKSPACE) BACKSPACE>,
+                <&hm LC(DELETE) DELETE>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
     };
 
     keymap {
