@@ -186,11 +186,11 @@
             bindings =
                 <&kp KP_NUMBER_2>,
                 <&kp KP_COMMA>,
-                <&kp LC(RC(GREATER_THAN))>;
+                <&kp GREATER_THAN>;
 
             #binding-cells = <0>;
             mods = <(MOD_RSFT|MOD_LSFT)>;
-            keep-mods = <()>;
+            keep-mods = <(|MOD_LCTL|MOD_RCTL)>;
         };
     };
 
