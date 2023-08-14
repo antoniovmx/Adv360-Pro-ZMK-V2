@@ -185,10 +185,11 @@
             label = "TWO_COMMA_GT";
             bindings =
                 <&kp KP_NUMBER_2>,
-                <&kp LC(COMMA)>;
+                <&kp COMMA>;
 
             #binding-cells = <0>;
             mods = <(MOD_RSFT|MOD_LSFT)>;
+            keep-mods = <(MOD_LCTL|MOD_RCTL)>;
         };
     };
 
