@@ -180,9 +180,9 @@
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
-        mod_two_comma: mod_two_comma {
+        two_comma: two_comma {
             compatible = "zmk,behavior-mod-morph";
-            label = "MOD_TWO_COMMA";
+            label = "TWO_COMMA";
             bindings =
                 <&kp KP_NUMBER_2>,
                 <&kp COMMA>;
@@ -190,12 +190,52 @@
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
-        mod_two_comma_gt: mod_two_comma_gt {
+        two_comma_lessthan: two_comma_lessthan {
             compatible = "zmk,behavior-mod-morph";
-            label = "MOD_TWO_COMMA_GT";
+            label = "TWO_COMMA_LESSTHAN";
             bindings =
-                <&mod_two_comma>,
+                <&two_comma>,
+                <&kp LESS_THAN>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LCTL|MOD_RCTL)>;
+        };
+        three_dot: three_dot {
+            compatible = "zmk,behavior-mod-morph";
+            label = "THREE_DOT";
+            bindings =
+                <&kp LS(KP_NUMBER_3)>,
+                <&kp DOT>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+        three_dot_greaterthan: three_dot_greaterthan {
+            compatible = "zmk,behavior-mod-morph";
+            label = "THREE_DOT_GREATERTHAN";
+            bindings =
+                <&three_dot>,
                 <&kp GREATER_THAN>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LCTL|MOD_RCTL)>;
+        };
+        zero_grave: zero_grave {
+            compatible = "zmk,behavior-mod-morph";
+            label = "ZERO_GRAVE";
+            bindings =
+                <&kp LS(KP_NUMBER_0)>,
+                <&kp GRAVE>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+        zero_grave_tilde: zero_grave_tilde {
+            compatible = "zmk,behavior-mod-morph";
+            label = "ZERO_GRAVE_TILDE";
+            bindings =
+                <&zero_grave>,
+                <&kp TILDE>;
 
             #binding-cells = <0>;
             mods = <(MOD_LCTL|MOD_RCTL)>;
@@ -217,11 +257,11 @@
 
         layer_keypad {
             bindings = <
-   &kp EQUAL         &ex_one                        &at_two                      &octo_three     &dol_four  &perc_five                  &mo 3                                                                      &tog 1    &car_six  &amp_seven         &ast_eight  &par_nine     &par_zero      &kp BSLH
-&kp CAPSLOCK           &none                          &none                            &none         &none       &none               &kp HOME                                                                 &kp PAGE_UP  &kp KP_NUM   &kp KP_N7          &kp KP_N8  &kp KP_N9  &kp KP_MINUS  &under_minus
-     &kp TAB           &kp A                          &kp S                            &kp D         &none       &none                &kp END     &kp LCTRL    &kp LEFT_ALT       &kp RIGHT_ALT  &kp RCTRL  &kp PAGE_DOWN       &none   &kp KP_N4          &kp KP_N5  &kp KP_N6   &kp KP_PLUS       &kp SQT
-   &kp LSHFT           &kp Z                          &kp X                            &kp C         &kp V       &kp B                                             &kp LGUI             &kp ESC                                 &none   &kp KP_N1  &mod_two_comma_gt  &kp KP_N3  &kp KP_SLASH     &kp RSHFT
-       &mo 2  &kp DOWN_ARROW  &hm LC(LEFT_ARROW) LEFT_ARROW  &hm LC(RIGHT_ARROW) RIGHT_ARROW  &kp UP_ARROW              &new_backspace_delete  &enter_space  &sEnter_cEnter      &sEnter_cEnter  &kp ENTER      &kp SPACE               &kp EQUAL          &kp COMMA    &kp DOT     &kp KP_N0         &mo 2
+   &kp EQUAL         &ex_one                        &at_two                      &octo_three     &dol_four  &perc_five                  &mo 3                                                                      &tog 1    &car_six  &amp_seven           &ast_eight               &par_nine          &par_zero      &kp BSLH
+&kp CAPSLOCK           &none                          &none                            &none         &none       &none               &kp HOME                                                                 &kp PAGE_UP  &kp KP_NUM   &kp KP_N7            &kp KP_N8               &kp KP_N9       &kp KP_MINUS  &under_minus
+     &kp TAB           &kp A                          &kp S                            &kp D         &none       &none                &kp END     &kp LCTRL    &kp LEFT_ALT       &kp RIGHT_ALT  &kp RCTRL  &kp PAGE_DOWN       &none   &kp KP_N4            &kp KP_N5               &kp KP_N6        &kp KP_PLUS       &kp SQT
+   &kp LSHFT           &kp Z                          &kp X                            &kp C         &kp V       &kp B                                             &kp LGUI             &kp ESC                                 &none   &kp KP_N1  &two_comma_lessthan  &three_dot_greaterthan       &kp KP_SLASH     &kp RSHFT
+       &mo 2  &kp DOWN_ARROW  &hm LC(LEFT_ARROW) LEFT_ARROW  &hm LC(RIGHT_ARROW) RIGHT_ARROW  &kp UP_ARROW              &new_backspace_delete  &enter_space  &sEnter_cEnter      &sEnter_cEnter  &kp ENTER      &kp SPACE               &kp EQUAL            &kp COMMA                 &kp DOT  &zero_grave_tilde         &mo 2
             >;
         };
 
