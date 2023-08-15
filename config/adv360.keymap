@@ -204,7 +204,7 @@
             compatible = "zmk,behavior-mod-morph";
             label = "THREE_DOT";
             bindings =
-                <&kp LS(KP_NUMBER_3)>,
+                <&kp KP_NUMBER_3>,
                 <&kp DOT>;
 
             #binding-cells = <0>;
@@ -224,7 +224,7 @@
             compatible = "zmk,behavior-mod-morph";
             label = "ZERO_GRAVE";
             bindings =
-                <&kp LS(KP_NUMBER_0)>,
+                <&kp KP_NUMBER_0>,
                 <&kp GRAVE>;
 
             #binding-cells = <0>;
@@ -261,7 +261,7 @@
 &kp CAPSLOCK           &none                          &none                            &none         &none       &none               &kp HOME                                                                 &kp PAGE_UP  &kp KP_NUM   &kp KP_N7            &kp KP_N8               &kp KP_N9       &kp KP_MINUS  &under_minus
      &kp TAB           &kp A                          &kp S                            &kp D         &none       &none                &kp END     &kp LCTRL    &kp LEFT_ALT       &kp RIGHT_ALT  &kp RCTRL  &kp PAGE_DOWN       &none   &kp KP_N4            &kp KP_N5               &kp KP_N6        &kp KP_PLUS       &kp SQT
    &kp LSHFT           &kp Z                          &kp X                            &kp C         &kp V       &kp B                                             &kp LGUI             &kp ESC                                 &none   &kp KP_N1  &two_comma_lessthan  &three_dot_greaterthan       &kp KP_SLASH     &kp RSHFT
-       &mo 2  &kp DOWN_ARROW  &hm LC(LEFT_ARROW) LEFT_ARROW  &hm LC(RIGHT_ARROW) RIGHT_ARROW  &kp UP_ARROW              &new_backspace_delete  &enter_space  &sEnter_cEnter      &sEnter_cEnter  &kp ENTER      &kp SPACE               &kp EQUAL            &kp COMMA                 &kp DOT  &zero_grave_tilde         &mo 2
+       &mo 2  &kp DOWN_ARROW  &hm LC(LEFT_ARROW) LEFT_ARROW  &hm LC(RIGHT_ARROW) RIGHT_ARROW  &kp UP_ARROW              &new_backspace_delete  &enter_space  &sEnter_cEnter      &sEnter_cEnter  &kp ENTER      &kp SPACE               &kp EQUAL     &kp LEFT_BRACKET       &kp RIGHT_BRACKET  &zero_grave_tilde         &mo 2
             >;
         };
 
