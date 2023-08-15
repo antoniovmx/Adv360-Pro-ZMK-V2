@@ -184,7 +184,7 @@
             compatible = "zmk,behavior-mod-morph";
             label = "TWO_COMMA";
             bindings =
-                <&kp KP_NUMBER_2>,
+                <&kp LS(KP_NUMBER_2)>,
                 <&kp KP_COMMA>;
 
             #binding-cells = <0>;
