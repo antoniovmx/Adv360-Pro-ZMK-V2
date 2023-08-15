@@ -180,6 +180,26 @@
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
+        two_comma: two_comma {
+            compatible = "zmk,behavior-mod-morph";
+            label = "TWO_COMMA";
+            bindings =
+                <&kp KP_N2>,
+                <&kp KP_COMMA>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
+        comma_gr: comma_gr {
+            compatible = "zmk,behavior-mod-morph";
+            label = "COMMA_GR";
+            bindings =
+                <&kp KP_COMMA>,
+                <&kp GREATER_THAN>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LCTL)>;
+        };
     };
 
     keymap {
