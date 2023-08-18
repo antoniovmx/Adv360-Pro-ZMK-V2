@@ -220,22 +220,22 @@
             #binding-cells = <0>;
             mods = <(MOD_LCTL|MOD_RCTL)>;
         };
-        zero_grave: zero_grave {
+        zero_under: zero_under {
             compatible = "zmk,behavior-mod-morph";
-            label = "ZERO_GRAVE";
+            label = "ZERO_UNDER";
             bindings =
                 <&kp KP_NUMBER_0>,
-                <&kp GRAVE>;
+                <&kp UNDER>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
-        zero_grave_tilde: zero_grave_tilde {
+        zero_under_minus: zero_under_minus {
             compatible = "zmk,behavior-mod-morph";
-            label = "ZERO_GRAVE_TILDE";
+            label = "ZERO_UNDER_MINUS";
             bindings =
-                <&zero_grave>,
-                <&kp TILDE>;
+                <&zero_under>,
+                <&kp MINUS>;
 
             #binding-cells = <0>;
             mods = <(MOD_LCTL|MOD_RCTL)>;
