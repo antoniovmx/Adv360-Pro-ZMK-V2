@@ -294,5 +294,15 @@
            &mo 2   &under_minus  &kp RIGHT_BRACKET  &kp LEFT_BRACKET   &kp EQUAL                &kp SPACE  &kp ENTER     &sEnter_cEnter      &none  &none  &none         &none  &none  &none  &none  &none
             >;
         };
+
+        layer_left_keypad {
+            bindings = <
+   &kp BACKSLASH     &par_zero               &par_nine           &ast_eight       &amp_seven    &car_six          &to 0                                    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+       &kp GRAVE  &kp KP_MINUS         &kp KP_NUMBER_9      &kp KP_NUMBER_8  &kp KP_NUMBER_7  &kp KP_NUM    &kp PAGE_UP                                    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&kp SINGLE_QUOTE   &kp KP_PLUS         &kp KP_NUMBER_6      &kp KP_NUMBER_5  &kp KP_NUMBER_4       &none  &kp PAGE_DOWN  &kp X  &kp X      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+ &kp RIGHT_SHIFT  &kp KP_SLASH  &three_dot_greaterthan  &two_comma_lessthan  &kp KP_NUMBER_1       &none                        &kp X      &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+           &mo 2   &zero_under       &kp RIGHT_BRACKET     &kp LEFT_BRACKET        &kp EQUAL                      &kp X  &kp X  &kp X      &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
+            >;
+        };
     };
 };
