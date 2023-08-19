@@ -240,6 +240,16 @@
             #binding-cells = <0>;
             mods = <(MOD_LCTL|MOD_RCTL)>;
         };
+        tog1_tog5: tog1_tog5 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "TOG1_TOG5";
+            bindings =
+                <&to 1>,
+                <&to 5>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LCTL|MOD_RCTL)>;
+        };
     };
 
     keymap {
@@ -247,7 +257,7 @@
 
         default_layer {
             bindings = <
-     &kp ESC         &ex_one                        &at_two                      &octo_three     &dol_four  &perc_five           &kp LEFT_GUI                                                                      &tog 1  &car_six  &amp_seven  &ast_eight  &par_nine     &par_zero  &kp BACKSLASH
+     &kp ESC         &ex_one                        &at_two                      &octo_three     &dol_four  &perc_five           &kp LEFT_GUI                                                                  &tog1_tog5  &car_six  &amp_seven  &ast_eight  &par_nine     &par_zero  &kp BACKSLASH
 &kp CAPSLOCK           &kp Q                          &kp W                            &kp E         &kp R       &kp T               &kp HOME                                                                 &kp PAGE_UP     &kp Y       &kp U       &kp I      &kp O         &kp P      &kp GRAVE
      &kp TAB           &kp A                          &kp S                            &kp D         &kp F       &kp G                &kp END     &kp LCTRL        &kp LALT            &kp RALT  &kp RCTRL  &kp PAGE_DOWN     &kp H       &kp J       &kp K      &kp L      &kp SEMI        &kp SQT
    &kp LSHFT           &kp Z                          &kp X                            &kp C         &kp V       &kp B                                                &mo 4             &kp ESC                               &kp N       &kp M   &kp COMMA    &kp DOT      &kp FSLH      &kp RSHFT
