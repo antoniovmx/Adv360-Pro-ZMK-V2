@@ -250,6 +250,16 @@
             #binding-cells = <0>;
             mods = <(MOD_LCTL|MOD_RCTL)>;
         };
+        space_underscore: space_underscore {
+            compatible = "zmk,behavior-mod-morph";
+            label = "SPACE_UNDERSCORE";
+            bindings =
+                <&kp SPACE>,
+                <&kp UNDER>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
     };
 
     keymap {
@@ -257,31 +267,31 @@
 
         default_layer {
             bindings = <
-     &kp ESC         &ex_one                        &at_two                      &octo_three     &dol_four  &perc_five           &kp LEFT_GUI                                                                  &tog1_tog5  &car_six  &amp_seven  &ast_eight  &par_nine     &par_zero  &kp BACKSLASH
-&kp CAPSLOCK           &kp Q                          &kp W                            &kp E         &kp R       &kp T               &kp HOME                                                                 &kp PAGE_UP     &kp Y       &kp U       &kp I      &kp O         &kp P      &kp GRAVE
-     &kp TAB           &kp A                          &kp S                            &kp D         &kp F       &kp G                &kp END     &kp LCTRL        &kp LALT            &kp RALT  &kp RCTRL  &kp PAGE_DOWN     &kp H       &kp J       &kp K      &kp L      &kp SEMI        &kp SQT
-   &kp LSHFT           &kp Z                          &kp X                            &kp C         &kp V       &kp B                                                &mo 4             &kp ESC                               &kp N       &kp M   &kp COMMA    &kp DOT      &kp FSLH      &kp RSHFT
-       &mo 2  &kp DOWN_ARROW  &hm LC(LEFT_ARROW) LEFT_ARROW  &hm LC(RIGHT_ARROW) RIGHT_ARROW  &kp UP_ARROW              &new_backspace_delete  &enter_space  &sEnter_cEnter      &sEnter_cEnter  &kp ENTER      &kp SPACE             &kp EQUAL    &kp LBKT   &kp RBKT  &under_minus          &mo 2
+     &kp ESC         &ex_one                        &at_two                      &octo_three     &dol_four  &perc_five           &kp LEFT_GUI                                                                      &tog1_tog5  &car_six  &amp_seven  &ast_eight  &par_nine  &par_zero  &kp BACKSLASH
+&kp CAPSLOCK           &kp Q                          &kp W                            &kp E         &kp R       &kp T               &kp HOME                                                                     &kp PAGE_UP     &kp Y       &kp U       &kp I      &kp O      &kp P      &kp GRAVE
+     &kp TAB           &kp A                          &kp S                            &kp D         &kp F       &kp G                &kp END     &kp LCTRL        &kp LALT            &kp RALT  &kp RCTRL      &kp PAGE_DOWN     &kp H       &kp J       &kp K      &kp L   &kp SEMI        &kp SQT
+   &kp LSHFT           &kp Z                          &kp X                            &kp C         &kp V       &kp B                                                &mo 4             &kp ESC                                   &kp N       &kp M   &kp COMMA    &kp DOT   &kp FSLH      &kp RSHFT
+       &mo 2  &kp DOWN_ARROW  &hm LC(LEFT_ARROW) LEFT_ARROW  &hm LC(RIGHT_ARROW) RIGHT_ARROW  &kp UP_ARROW              &new_backspace_delete  &enter_space  &sEnter_cEnter      &sEnter_cEnter  &kp ENTER  &space_underscore             &kp EQUAL    &kp LBKT   &kp RBKT  &kp MINUS          &mo 2
             >;
         };
 
         layer_keypad {
             bindings = <
-     &kp ESC         &ex_one                        &at_two                      &octo_three     &dol_four  &perc_five           &kp LEFT_GUI                                                                      &tog 1    &car_six  &amp_seven           &ast_eight               &par_nine          &par_zero   &kp BSLH
-&kp CAPSLOCK           &none                          &none                            &none         &none       &none               &kp HOME                                                                 &kp PAGE_UP  &kp KP_NUM   &kp KP_N7            &kp KP_N8               &kp KP_N9       &kp KP_MINUS  &kp GRAVE
-     &kp TAB           &kp A                          &kp S                            &kp D         &none       &none                &kp END     &kp LCTRL    &kp LEFT_ALT       &kp RIGHT_ALT  &kp RCTRL  &kp PAGE_DOWN       &none   &kp KP_N4            &kp KP_N5               &kp KP_N6        &kp KP_PLUS    &kp SQT
-   &kp LSHFT           &kp Z                          &kp X                            &kp C         &kp V       &kp B                                                &mo 4             &kp ESC                                 &none   &kp KP_N1  &two_comma_lessthan  &three_dot_greaterthan       &kp KP_SLASH  &kp RSHFT
-       &mo 2  &kp DOWN_ARROW  &hm LC(LEFT_ARROW) LEFT_ARROW  &hm LC(RIGHT_ARROW) RIGHT_ARROW  &kp UP_ARROW              &new_backspace_delete  &enter_space  &sEnter_cEnter      &sEnter_cEnter  &kp ENTER      &kp SPACE               &kp EQUAL     &kp LEFT_BRACKET       &kp RIGHT_BRACKET  &zero_under_minus      &mo 2
+     &kp ESC         &ex_one                        &at_two                      &octo_three     &dol_four  &perc_five           &kp LEFT_GUI                                                                          &tog 1    &car_six  &amp_seven           &ast_eight               &par_nine        &par_zero   &kp BSLH
+&kp CAPSLOCK           &none                          &none                            &none         &none       &none               &kp HOME                                                                     &kp PAGE_UP  &kp KP_NUM   &kp KP_N7            &kp KP_N8               &kp KP_N9     &kp KP_MINUS  &kp GRAVE
+     &kp TAB           &kp A                          &kp S                            &kp D         &none       &none                &kp END     &kp LCTRL    &kp LEFT_ALT       &kp RIGHT_ALT  &kp RCTRL      &kp PAGE_DOWN       &none   &kp KP_N4            &kp KP_N5               &kp KP_N6      &kp KP_PLUS    &kp SQT
+   &kp LSHFT           &kp Z                          &kp X                            &kp C         &kp V       &kp B                                                &mo 4             &kp ESC                                     &none   &kp KP_N1  &two_comma_lessthan  &three_dot_greaterthan     &kp KP_SLASH  &kp RSHFT
+       &mo 2  &kp DOWN_ARROW  &hm LC(LEFT_ARROW) LEFT_ARROW  &hm LC(RIGHT_ARROW) RIGHT_ARROW  &kp UP_ARROW              &new_backspace_delete  &enter_space  &sEnter_cEnter      &sEnter_cEnter  &kp ENTER  &space_underscore               &kp EQUAL     &kp LEFT_BRACKET       &kp RIGHT_BRACKET  &kp KP_NUMBER_0      &mo 2
             >;
         };
 
         layer_fn {
             bindings = <
-    &trans  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp PRINTSCREEN                                                              &kp C_MUTE      &kp F6     &kp F7     &kp F8     &kp F9       &kp F10           &kp F11
-&caps_word  &trans  &trans  &trans  &trans  &trans     &kp C_VOL_UP                                                            &kp C_VOL_UP  &kp KP_NUM  &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp KP_MINUS           &kp F12
-    &trans  &trans  &trans  &trans  &trans  &trans     &kp C_VOL_DN     &trans          &trans              &trans     &trans  &kp C_VOL_DN       &none  &kp KP_N4  &kp KP_N5  &kp KP_N6   &kp KP_PLUS  &kp SINGLE_QUOTE
-    &trans  &trans  &trans  &trans  &trans  &trans                                      &trans             &kp ESC                                &none  &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp KP_SLASH            &trans
-    &trans  &trans  &trans  &trans  &trans            &kp BACKSPACE  &kp ENTER  &sEnter_cEnter      &sEnter_cEnter  &kp ENTER     &kp SPACE              &kp EQUAL  &kp COMMA    &kp DOT     &kp KP_N0            &trans
+    &trans  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp PRINTSCREEN                                                                   &kp C_MUTE      &kp F6     &kp F7     &kp F8     &kp F9       &kp F10           &kp F11
+&caps_word  &trans  &trans  &trans  &trans  &trans     &kp C_VOL_UP                                                                 &kp C_VOL_UP  &kp KP_NUM  &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp KP_MINUS           &kp F12
+    &trans  &trans  &trans  &trans  &trans  &trans     &kp C_VOL_DN     &trans          &trans              &trans     &trans       &kp C_VOL_DN       &none  &kp KP_N4  &kp KP_N5  &kp KP_N6   &kp KP_PLUS  &kp SINGLE_QUOTE
+    &trans  &trans  &trans  &trans  &trans  &trans                                      &trans             &kp ESC                                     &none  &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp KP_SLASH            &trans
+    &trans  &trans  &trans  &trans  &trans            &kp BACKSPACE  &kp ENTER  &sEnter_cEnter      &sEnter_cEnter  &kp ENTER  &space_underscore              &kp EQUAL  &kp COMMA    &kp DOT     &kp KP_N0            &trans
             >;
         };
 
@@ -297,21 +307,21 @@
 
         layer_lefthand_kb {
             bindings = <
-   &kp BACKSLASH      &par_zero          &par_nine        &ast_eight  &amp_seven  &car_six        &kp ESC                                                  &none  &none  &none  &none  &none  &none  &none
-        &kp APOS          &kp P              &kp O             &kp I       &kp U     &kp Y    &kp PAGE_UP                                                  &none  &none  &none  &none  &none  &none  &none
-&kp SINGLE_QUOTE  &kp SEMICOLON              &kp L             &kp K       &kp J     &kp H  &kp PAGE_DOWN   &kp RALT  &kp RIGHT_CONTROL      &none  &none  &none  &none  &none  &none  &none  &none  &none
- &kp RIGHT_SHIFT      &kp SLASH            &kp DOT         &kp COMMA       &kp M     &kp N                                        &mo 4      &none                &none  &none  &none  &none  &none  &none
-           &mo 2   &under_minus  &kp RIGHT_BRACKET  &kp LEFT_BRACKET   &kp EQUAL                &kp SPACE  &kp ENTER     &sEnter_cEnter      &none  &none  &none         &none  &none  &none  &none  &none
+   &kp BACKSLASH      &par_zero          &par_nine        &ast_eight  &amp_seven  &car_six            &kp ESC                                                  &none  &none  &none  &none  &none  &none  &none
+        &kp APOS          &kp P              &kp O             &kp I       &kp U     &kp Y        &kp PAGE_UP                                                  &none  &none  &none  &none  &none  &none  &none
+&kp SINGLE_QUOTE  &kp SEMICOLON              &kp L             &kp K       &kp J     &kp H      &kp PAGE_DOWN   &kp RALT  &kp RIGHT_CONTROL      &none  &none  &none  &none  &none  &none  &none  &none  &none
+ &kp RIGHT_SHIFT      &kp SLASH            &kp DOT         &kp COMMA       &kp M     &kp N                                            &mo 4      &none                &none  &none  &none  &none  &none  &none
+           &mo 2      &kp MINUS  &kp RIGHT_BRACKET  &kp LEFT_BRACKET   &kp EQUAL            &space_underscore  &kp ENTER     &sEnter_cEnter      &none  &none  &none         &none  &none  &none  &none  &none
             >;
         };
 
         layer_left_keypad {
             bindings = <
-   &kp BACKSLASH     &par_zero               &par_nine           &ast_eight       &amp_seven    &car_six          &to 0                                                         &trans  &trans  &trans  &trans  &trans  &trans  &trans
-       &kp GRAVE  &kp KP_MINUS         &kp KP_NUMBER_9      &kp KP_NUMBER_8  &kp KP_NUMBER_7  &kp KP_NUM    &kp PAGE_UP                                                         &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&kp SINGLE_QUOTE   &kp KP_PLUS         &kp KP_NUMBER_6      &kp KP_NUMBER_5  &kp KP_NUMBER_4       &none  &kp PAGE_DOWN  &kp RIGHT_CONTROL        &kp RALT      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
- &kp RIGHT_SHIFT  &kp KP_SLASH  &three_dot_greaterthan  &two_comma_lessthan  &kp KP_NUMBER_1       &none                                           &kp ESC      &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-           &mo 2   &zero_under       &kp RIGHT_BRACKET     &kp LEFT_BRACKET        &kp EQUAL                  &kp SPACE          &kp ENTER  &sEnter_cEnter      &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
+   &kp BACKSLASH        &par_zero               &par_nine           &ast_eight       &amp_seven    &car_six              &to 0                                                         &trans  &trans  &trans  &trans  &trans  &trans  &trans
+       &kp GRAVE     &kp KP_MINUS         &kp KP_NUMBER_9      &kp KP_NUMBER_8  &kp KP_NUMBER_7  &kp KP_NUM        &kp PAGE_UP                                                         &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&kp SINGLE_QUOTE      &kp KP_PLUS         &kp KP_NUMBER_6      &kp KP_NUMBER_5  &kp KP_NUMBER_4       &none      &kp PAGE_DOWN  &kp RIGHT_CONTROL        &kp RALT      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+ &kp RIGHT_SHIFT     &kp KP_SLASH  &three_dot_greaterthan  &two_comma_lessthan  &kp KP_NUMBER_1       &none                                               &kp ESC      &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+           &mo 2  &kp KP_NUMBER_0       &kp RIGHT_BRACKET     &kp LEFT_BRACKET        &kp EQUAL              &space_underscore          &kp ENTER  &sEnter_cEnter      &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
