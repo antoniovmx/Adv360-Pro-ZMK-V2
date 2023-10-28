@@ -260,7 +260,7 @@
         layer_lefthand_kb {
             bindings = <
 &kp BACKSLASH     &par_zero  &par_nine          &ast_eight        &amp_seven  &car_six  &kp ESC                                                            &none  &none  &none  &none  &none  &none  &none
-&kp APOS          &kp P      &kp O              &kp I             &kp U       &kp Y     &kp PAGE_UP                                                        &none  &none  &none  &none  &none  &none  &none
+&kp GRAVE         &kp P      &kp O              &kp I             &kp U       &kp Y     &kp PAGE_UP                                                        &none  &none  &none  &none  &none  &none  &none
 &kp SINGLE_QUOTE  &kp SEMI   &kp L              &kp K             &kp J       &kp H     &kp PAGE_DOWN      &kp RALT   &kp RIGHT_CONTROL      &none  &none  &none  &none  &none  &none  &none  &none  &none
 &kp RIGHT_SHIFT   &kp SLASH  &kp DOT            &kp COMMA         &kp M       &kp N                                   &mo 4                  &none                &none  &none  &none  &none  &none  &none
 &mo 2             &kp MINUS  &kp RIGHT_BRACKET  &kp LEFT_BRACKET  &kp EQUAL             &space_underscore  &kp ENTER  &sEnter_cEnter         &none  &none  &none         &none  &none  &none  &none  &none
