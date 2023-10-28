@@ -26,16 +26,12 @@
             tapping-term-ms = <200>;
             quick_tap_ms = <175>;
             flavor = "tap-preferred";
-            bindings =
-                <&kp>,
-                <&kp>;
+            bindings = <&kp>, <&kp>;
         };
         par_nine: par_nine {
             compatible = "zmk,behavior-mod-morph";
             label = "PAR_NINE";
-            bindings =
-                <&kp LEFT_PARENTHESIS>,
-                <&kp N9>;
+            bindings = <&kp LEFT_PARENTHESIS>, <&kp N9>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
@@ -43,9 +39,7 @@
         ex_one: ex_one {
             compatible = "zmk,behavior-mod-morph";
             label = "EX_ONE";
-            bindings =
-                <&kp EXCLAMATION>,
-                <&kp KP_NUMBER_1>;
+            bindings = <&kp EXCLAMATION>, <&kp KP_NUMBER_1>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
@@ -53,9 +47,7 @@
         at_two: at_two {
             compatible = "zmk,behavior-mod-morph";
             label = "AT_TWO";
-            bindings =
-                <&kp AT_SIGN>,
-                <&kp KP_NUMBER_2>;
+            bindings = <&kp AT_SIGN>, <&kp KP_NUMBER_2>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
@@ -63,9 +55,7 @@
         octo_three: octo_three {
             compatible = "zmk,behavior-mod-morph";
             label = "OCTO_THREE";
-            bindings =
-                <&kp HASH>,
-                <&kp KP_NUMBER_3>;
+            bindings = <&kp HASH>, <&kp KP_NUMBER_3>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
@@ -73,9 +63,7 @@
         perc_five: perc_five {
             compatible = "zmk,behavior-mod-morph";
             label = "PERC_FIVE";
-            bindings =
-                <&kp PRCNT>,
-                <&kp KP_NUMBER_5>;
+            bindings = <&kp PRCNT>, <&kp KP_NUMBER_5>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
@@ -83,9 +71,7 @@
         car_six: car_six {
             compatible = "zmk,behavior-mod-morph";
             label = "CAR_SIX";
-            bindings =
-                <&kp CARET>,
-                <&kp KP_NUMBER_6>;
+            bindings = <&kp CARET>, <&kp KP_NUMBER_6>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
@@ -93,9 +79,7 @@
         amp_seven: amp_seven {
             compatible = "zmk,behavior-mod-morph";
             label = "AMP_SEVEN";
-            bindings =
-                <&kp AMPS>,
-                <&kp KP_NUMBER_7>;
+            bindings = <&kp AMPS>, <&kp KP_NUMBER_7>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
@@ -103,9 +87,7 @@
         ast_eight: ast_eight {
             compatible = "zmk,behavior-mod-morph";
             label = "AST_EIGHT";
-            bindings =
-                <&kp ASTERISK>,
-                <&kp KP_NUMBER_8>;
+            bindings = <&kp ASTERISK>, <&kp KP_NUMBER_8>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
@@ -113,9 +95,7 @@
         par_zero: par_zero {
             compatible = "zmk,behavior-mod-morph";
             label = "PAR_ZERO";
-            bindings =
-                <&kp RPAR>,
-                <&kp KP_NUMBER_0>;
+            bindings = <&kp RPAR>, <&kp KP_NUMBER_0>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
@@ -123,9 +103,7 @@
         dol_four: dol_four {
             compatible = "zmk,behavior-mod-morph";
             label = "DOL_FOUR";
-            bindings =
-                <&kp DLLR>,
-                <&kp KP_NUMBER_4>;
+            bindings = <&kp DLLR>, <&kp KP_NUMBER_4>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
@@ -133,9 +111,7 @@
         under_minus: under_minus {
             compatible = "zmk,behavior-mod-morph";
             label = "UNDER_MINUS";
-            bindings =
-                <&kp UNDERSCORE>,
-                <&kp MINUS>;
+            bindings = <&kp UNDERSCORE>, <&kp MINUS>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
@@ -143,9 +119,7 @@
         backspace_delete: backspace_delete {
             compatible = "zmk,behavior-mod-morph";
             label = "BACKSPACE_DELETE";
-            bindings =
-                <&kp BACKSPACE>,
-                <&kp DELETE>;
+            bindings = <&kp BACKSPACE>, <&kp DELETE>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
@@ -153,9 +127,7 @@
         enter_space: enter_space {
             compatible = "zmk,behavior-mod-morph";
             label = "ENTER_SPACE";
-            bindings =
-                <&kp KP_ENTER>,
-                <&kp SPACE>;
+            bindings = <&kp KP_ENTER>, <&kp SPACE>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
@@ -163,9 +135,7 @@
         sEnter_cEnter: sEnter_cEnter {
             compatible = "zmk,behavior-mod-morph";
             label = "SENTER_CENTER";
-            bindings =
-                <&kp LS(KP_ENTER)>,
-                <&kp LC(KP_ENTER)>;
+            bindings = <&kp LS(KP_ENTER)>, <&kp LC(KP_ENTER)>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
@@ -173,9 +143,7 @@
         new_backspace_delete: new_backspace_delete {
             compatible = "zmk,behavior-mod-morph";
             label = "NEW_BACKSPACE_DELETE";
-            bindings =
-                <&hm LC(BACKSPACE) BACKSPACE>,
-                <&hm LC(DELETE) DELETE>;
+            bindings = <&hm LC(BACKSPACE) BACKSPACE>, <&hm LC(DELETE) DELETE>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
@@ -183,9 +151,7 @@
         two_comma: two_comma {
             compatible = "zmk,behavior-mod-morph";
             label = "TWO_COMMA";
-            bindings =
-                <&kp KP_NUMBER_2>,
-                <&kp COMMA>;
+            bindings = <&kp KP_NUMBER_2>, <&kp COMMA>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
@@ -193,9 +159,7 @@
         two_comma_lessthan: two_comma_lessthan {
             compatible = "zmk,behavior-mod-morph";
             label = "TWO_COMMA_LESSTHAN";
-            bindings =
-                <&two_comma>,
-                <&kp LESS_THAN>;
+            bindings = <&two_comma>, <&kp LESS_THAN>;
 
             #binding-cells = <0>;
             mods = <(MOD_LCTL|MOD_RCTL)>;
@@ -203,9 +167,7 @@
         three_dot: three_dot {
             compatible = "zmk,behavior-mod-morph";
             label = "THREE_DOT";
-            bindings =
-                <&kp KP_NUMBER_3>,
-                <&kp DOT>;
+            bindings = <&kp KP_NUMBER_3>, <&kp DOT>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
@@ -213,9 +175,7 @@
         three_dot_greaterthan: three_dot_greaterthan {
             compatible = "zmk,behavior-mod-morph";
             label = "THREE_DOT_GREATERTHAN";
-            bindings =
-                <&three_dot>,
-                <&kp GREATER_THAN>;
+            bindings = <&three_dot>, <&kp GREATER_THAN>;
 
             #binding-cells = <0>;
             mods = <(MOD_LCTL|MOD_RCTL)>;
@@ -223,9 +183,7 @@
         zero_under: zero_under {
             compatible = "zmk,behavior-mod-morph";
             label = "ZERO_UNDER";
-            bindings =
-                <&kp KP_NUMBER_0>,
-                <&kp UNDER>;
+            bindings = <&kp KP_NUMBER_0>, <&kp UNDER>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
@@ -233,9 +191,7 @@
         zero_under_minus: zero_under_minus {
             compatible = "zmk,behavior-mod-morph";
             label = "ZERO_UNDER_MINUS";
-            bindings =
-                <&zero_under>,
-                <&kp MINUS>;
+            bindings = <&zero_under>, <&kp MINUS>;
 
             #binding-cells = <0>;
             mods = <(MOD_LCTL|MOD_RCTL)>;
@@ -243,9 +199,7 @@
         tog1_tog5: tog1_tog5 {
             compatible = "zmk,behavior-mod-morph";
             label = "TOG1_TOG5";
-            bindings =
-                <&to 1>,
-                <&to 5>;
+            bindings = <&to 1>, <&to 5>;
 
             #binding-cells = <0>;
             mods = <(MOD_LCTL|MOD_RCTL)>;
@@ -253,9 +207,7 @@
         space_underscore: space_underscore {
             compatible = "zmk,behavior-mod-morph";
             label = "SPACE_UNDERSCORE";
-            bindings =
-                <&kp SPACE>,
-                <&kp UNDER>;
+            bindings = <&kp SPACE>, <&kp UNDER>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
@@ -270,7 +222,7 @@
 &kp CAPSLOCK  &ex_one         &at_two                        &octo_three                      &dol_four     &perc_five  &kp LEFT_GUI                                                                        &tog1_tog5         &car_six  &amp_seven  &ast_eight  &par_nine  &par_zero  &kp BACKSLASH
 &kp ESCAPE    &kp Q           &kp W                          &kp E                            &kp R         &kp T       &kp HOME                                                                            &kp PAGE_UP        &kp Y     &kp U       &kp I       &kp O      &kp P      &kp GRAVE
 &kp TAB       &kp A           &kp S                          &kp D                            &kp F         &kp G       &kp END                &kp LCTRL     &kp LALT            &kp RALT        &kp RCTRL  &kp PAGE_DOWN      &kp H     &kp J       &kp K       &kp L      &kp SEMI   &kp SQT
-&kp LSHFT     &kp Z           &kp X                          &kp C                            &kp V         &kp B                                            &mo 6               &kp CAPSLOCK                                  &kp N     &kp M       &kp COMMA   &kp DOT    &kp FSLH   &kp RSHFT
+&kp LSHFT     &kp Z           &kp X                          &kp C                            &kp V         &kp B                                            &mo 4               &kp CAPSLOCK                                  &kp N     &kp M       &kp COMMA   &kp DOT    &kp FSLH   &kp RSHFT
 &mo 2         &kp DOWN_ARROW  &hm LC(LEFT_ARROW) LEFT_ARROW  &hm LC(RIGHT_ARROW) RIGHT_ARROW  &kp UP_ARROW              &new_backspace_delete  &enter_space  &sEnter_cEnter      &sEnter_cEnter  &kp ENTER  &space_underscore            &kp EQUAL   &kp LBKT    &kp RBKT   &kp MINUS  &mo 2
             >;
         };
